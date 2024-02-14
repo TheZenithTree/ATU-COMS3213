@@ -1,0 +1,12 @@
+1. Breadth first search works by first picking a vertex on a graph, then progressing through its neighbors. From the neighbors, you progress through their nieghbors until all of the vertexes of the graph have been visited by the search. 
+
+2. Attached is a graph with the adjacency matrix:
+   A B C D E F
+ A 0 1 0 1 1 0
+ B 1 0 1 0 0 0
+ C 0 1 0 0 1 1
+ D 1 0 0 0 1 0
+ E 1 0 1 1 0 1
+ F 0 0 1 0 0 1
+
+Using breath first search, the graph should be traversed (if the starting vertex is A) in the order of A, B, D, E, C, F. A is connected to B, D, and E, so each of those will be traversed to first. Then, their neighbors will be traversed, and since some vertexes have already been traversed, they will not be included going further. After B, D, and E have been traversed, the vertex C could be traversed from either the B vertex or the E vertex while the F vertex would be traversed from the E vertex. 
